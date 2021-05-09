@@ -12,7 +12,7 @@ import numpy as np
 import torch
 import random
 
-
+# 分支1
 def seed_torch(seed=2019):
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
@@ -138,7 +138,7 @@ if __name__ == '__main__':
             n_epoch = opt.niter + opt.niter_decay
 
             model.set_input(data)         # 从数据集中解压缩数据并应用预处理
-            model.optimize_parameters()   # 计算损失函数，获取梯度，更新网络权重
+            model.optimize_parameters()   # 计算损失函数，获取梯度，更新网络权重2
             if ifSaveImage:
                 if total_iters % opt.display_freq == 0:   # 在visdom上显示图像并将图像保存到HTML文件
                     save_result = total_iters % opt.update_html_freq == 0
