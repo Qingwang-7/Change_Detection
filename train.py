@@ -12,7 +12,7 @@ import numpy as np
 import torch
 import random
 
-# 分支1-1-1
+# 2021年5月10日02:32:44
 def seed_torch(seed=2019):
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
